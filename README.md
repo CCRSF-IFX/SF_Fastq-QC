@@ -1,6 +1,6 @@
 # Sequencing Facility Fastq-QC pipeline: Nopipe
 
-No Pipe is an abbreviated pipeline that will just run Fastqc and allows raw fastq files upload to either Biowulf or DME. 
+No Pipe is an abbreviated pipeline that will run Fastqc and generate multiqc report. 
 
 ## Quality Control (QC):
 
@@ -29,7 +29,25 @@ Configure the workflow according to your needs via editing the `config.yaml` fil
 $NAME=my_environment_name
 `conda create -n $NAME`
 
-### Step 5: Execute the WorkflowActivate the Conda Environment:`conda activate $NAME`Install `mamba``conda install -c conda-forge mamba`Test the Configuration: Perform a dry-run to validate your setup:`snakemake --use-conda -np`Local Execution: Execute the workflow on your local machine using $N cores:`snakemake --use-conda --cores $N`Here, $N represents the number of cores you wish to allocate for the workflow.
+### Step 5: Execute the Workflow
+
+Activate the Conda Environment:
+
+`conda activate $NAME`
+
+Install `mamba`
+
+`conda install -c conda-forge mamba`
+
+Test the Configuration: Perform a dry-run to validate your setup:
+
+`snakemake --use-conda -np`
+
+Local Execution: Execute the workflow on your local machine using $N cores:
+
+`snakemake --use-conda --cores $N`
+
+Here, $N represents the number of cores you wish to allocate for the workflow.
 
 ### Step 6: Investigate results
 
