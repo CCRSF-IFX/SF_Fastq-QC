@@ -1,0 +1,12 @@
+# The main entry point of your workflow.
+# After configuring, running snakemake -n in a clone of this repository should successfully execute a dry-run of the workflow.
+
+
+
+include: "/workflow/rules/common.smk" #path to common.smk
+include: "/workflow/rules/qc.smk"  
+
+rule all: 
+    input: 
+        expand("Sample_{sample}/{sample}_R1_001_fastqc.html", sample = samples), 
+        expand("Sample_{sample}/{sample}_R1_001_screen.png", sample = samples), "multiqc.html"

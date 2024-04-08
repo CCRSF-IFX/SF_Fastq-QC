@@ -1,0 +1,19 @@
+unaligned: "path/to/RAWDATA" # Specify the directory where your raw FASTQ files are located
+analysis:  "path/to/analysis_folder" # Specify the directory where you want your analysis results to be stored
+paired: 2
+fastqscreen: "path/to/fastqscreen/config/file" # Specify the path to the config file for fastqscreen
+
+
+#Cluster assign
+large:
+  mem: 400000
+  time: "96:00:00"
+  partition: "norm"
+medium:
+  mem: 128000
+  time: "96:00:00"
+  partition: "norm"
+small:
+  mem: 32000
+  time: "96:00:00"
+  partition: "norm"
