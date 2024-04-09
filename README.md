@@ -26,7 +26,8 @@ Configure the workflow according to your needs via editing the `config.yaml` fil
 
 ### Step 4: Create a conda environment
 
-$NAME=my_environment_name
+`$NAME=my_environment_name`
+
 `conda create -n $NAME`
 
 ### Step 5: Execute the Workflow
