@@ -1,6 +1,6 @@
 # Sequencing Facility Fastq-QC pipeline: No pipe
 
-No Pipe is an abbreviated pipeline that will run Fastqc, fastq screen and generate multiqc report. 
+No Pipe is an abbreviated pipeline that will run Fastqc, Fastq screen and generate MultiQC report. 
 
 ## Quality Control (QC):
 
