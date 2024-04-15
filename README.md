@@ -1,6 +1,6 @@
-# Sequencing Facility Fastq-QC pipeline: Nopipe
+# Sequencing Facility Fastq-QC pipeline: No pipe
 
-No Pipe is an abbreviated pipeline that will run Fastqc and generate multiqc report. 
+No Pipe is an abbreviated pipeline that will run Fastqc, fastq screen and generate multiqc report. 
 
 ## Quality Control (QC):
 
@@ -19,8 +19,9 @@ Clone the Repository: Clone the new repository to your local machine, choosing t
 ### Step 2: Configure workflow
 
 Configure the workflow according to your needs via editing the `config.yaml` file in the `config/` folder. 
+For test purpose: use mock data located in test folder.
 
-### Step 3: Load Load the snakemake version 8 or above 
+### Step 3: Load the snakemake version 8 or above 
 
 `module load snakemake/8.4.8`
 
@@ -40,7 +41,7 @@ Install `mamba`
 
 `conda install -c conda-forge mamba`
 
-Test the Configuration: Perform a dry-run to validate your setup:
+Perform a dry-run to validate your setup:
 
 `snakemake --use-conda -np`
 
@@ -53,5 +54,7 @@ Here, $N represents the number of cores you wish to allocate for the workflow.
 ### Step 6: Investigate results
 
 After successful execution, HTML report with QC results will be generated. 
-conda deactivate
+
+`conda deactivate`
+
 
