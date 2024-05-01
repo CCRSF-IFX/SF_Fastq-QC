@@ -2,6 +2,8 @@
 
 No Pipe is an abbreviated pipeline that will run Fastqc, Fastq screen and generate MultiQC report. 
 
+![SF_Fastq-QC](https://github.com/CCRSF-IFX/SF_Fastq-QC/blob/main/resources/Fastq-QC_workflow.jpeg)
+
 ## Quality Control (QC):
 
 [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/): Perform initial quality checks on raw sequencing data to assess sequence quality, GC content, over-representation of sequences, etc.
